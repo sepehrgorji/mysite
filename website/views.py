@@ -4,4 +4,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index_view(requset):
-    return HttpResponse("hello")
+    return render(requset,'index.html')
+
+def about_view(requset):
+    return render(requset,'about.html')
+
+def contact_view(requset):
+    return render(requset,'contact.html')
